@@ -221,5 +221,5 @@ This project uses a **synthetic dataset** designed to simulate real-world HR rec
 
 ## Author
 
-**Fazra Farook**
+**Fazra Farook**  
 BSc (Hons) Applied Statistics — University of Colombo
