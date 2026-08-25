@@ -8,21 +8,20 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
-This project is an end-to-end **HR Recruitment Analytics Dashboard** built using **MySQL** as the data source and **Microsoft Power BI** as the reporting tool. It was developed as part of the Advanced Power BI assignment for the MiHCM University Session under the ST4035 Data Science module.
-
+This project is an end-to-end **HR Recruitment Analytics Dashboard** built using **MySQL** as the data source and **Microsoft Power BI** as the reporting tool.
 The dashboard analyzes a simulated recruitment pipeline across **8 departments**, **15 job positions**, and **8 hiring channels**, covering **91 applicant records** from January 2023 to June 2024.
 
 ---
 
-## ❓ Business Problem
+## Business Problem
 
 > *"How efficient is our hiring process? Which departments struggle to fill roles, and where do candidates drop off in the recruitment pipeline?"*
 
 ---
 
-## 🎯 Key Insights
+## Key Insights
 
 | Metric | Value |
 |--------|-------|
@@ -36,23 +35,7 @@ The dashboard analyzes a simulated recruitment pipeline across **8 departments**
 
 ---
 
-## 🗂️ Project Structure
-
-```
-recruitment-analytics/
-│
-├── 📄 README.md
-├── 📄 recruitment_analytics.sql       ← Full MySQL script
-├── 📊 PBI_Dashboard_recruitment.pbix  ← Power BI dashboard file
-└── 📁 screenshots/
-    ├── cover_page.png
-    ├── page1_overview.png
-    └── page2_department_analysis.png
-```
-
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |------|---------|
@@ -63,7 +46,7 @@ recruitment-analytics/
 
 ---
 
-## 🗄️ Database Design
+## Database Design
 
 ### Star Schema
 
@@ -95,7 +78,7 @@ recruitment-analytics/
 
 ---
 
-## 📐 DAX Measures (15 Total)
+## DAX Measures (15 Total)
 
 ### Volume Measures
 ```dax
@@ -146,7 +129,11 @@ RETURN DIVIDE(CurrentMonth - LastMonth, LastMonth, 0) * 100
 
 ---
 
-## 📊 Dashboard Pages
+## Dashboard Pages
+
+### Cover Page
+- Project title and description
+- Navigation buttons to each page
 
 ### Page 1 — Recruitment Overview
 - 4 slicers (Year, Department, Job Level, Source Type)
@@ -163,29 +150,25 @@ RETURN DIVIDE(CurrentMonth - LastMonth, LastMonth, 0) * 100
 - Table — Applicant details with conditional formatting
 - Scatter chart — Experience vs Expected Salary
 
-### Cover Page
-- Project title and description
-- Navigation buttons to each page
-
 ---
 
-## ⚙️ Advanced Features Implemented
+## Advanced Features Implemented
 
 | Feature | Where Used |
 |---------|-----------|
-| ✅ Drill-through | Page 1 → Page 2 via department bar chart |
-| ✅ Drill-down | Job Level → Position Title on Page 2 stacked bar |
-| ✅ Conditional formatting | Bar chart gradient, table background colors |
-| ✅ Tooltips | Bar chart, line chart, donut chart, scatter chart |
-| ✅ Slicers | 4 slicers on Page 1 |
-| ✅ Navigation buttons | Cover page and cross-page navigation |
-| ✅ Star schema | 5-table model in Model view |
-| ✅ Date table | DAX-generated with Year, Quarter, Month hierarchy |
-| ✅ Calculated columns | Age Group, Salary Band, YearMonth |
+| Drill-through | Page 1 → Page 2 via department bar chart |
+| Drill-down | Job Level → Position Title on Page 2 stacked bar |
+| Conditional formatting | Bar chart gradient, table background colors |
+| Tooltips | Bar chart, line chart, donut chart, scatter chart |
+| Slicers | 4 slicers on Page 1 |
+| Navigation buttons | Cover page and cross-page navigation |
+| Star schema | 5-table model in Model view |
+| Date table | DAX-generated with Year, Quarter, Month hierarchy |
+| Calculated columns | Age Group, Salary Band, YearMonth |
 
 ---
 
-## 🚀 How to Run This Project
+## How to Run This Project
 
 ### Prerequisites
 - MySQL / phpMyAdmin (XAMPP recommended)
@@ -219,42 +202,24 @@ RETURN DIVIDE(CurrentMonth - LastMonth, LastMonth, 0) * 100
 
 ---
 
-## 📋 SQL Queries Included
+## SQL Queries Included
 
 The SQL script includes queries for:
-- ✅ Data validation (count per stage, duplicates check)
-- ✅ Data aggregation (monthly trends, department counts)
-- ✅ Data joins (full applicant detail view across all tables)
-- ✅ Recruitment funnel calculation (cumulative stage counts)
-- ✅ Source effectiveness analysis (applications vs hires per source)
+- Data validation (count per stage, duplicates check)
+- Data aggregation (monthly trends, department counts)
+- Data joins (full applicant detail view across all tables)
+- Recruitment funnel calculation (cumulative stage counts)
+- Source effectiveness analysis (applications vs hires per source)
 
 ---
 
-## ⚠️ Data Note
+## Data Note
 
-This project uses a **synthetic dataset** designed to simulate real-world HR recruitment scenarios. All applicant names, salary figures, and dates are fictional. The dataset was purpose-built to demonstrate the full range of Power BI analytics features required by the assignment.
+This project uses a **synthetic dataset** designed to simulate real-world HR recruitment scenarios. All applicant names, salary figures, and dates are fictional.
 
 ---
 
-## 👤 Author
+## Author
 
 **Fazra Farook**
 BSc (Hons) Applied Statistics — University of Colombo
-Student ID: S16686
-
----
-
-## 📚 Module Information
-
-| Detail | Info |
-|--------|------|
-| Module | ST4035 — Data Science |
-| Assignment | Advanced Power BI HR Analytics |
-| Session | MiHCM University Session |
-| Year | 2024 |
-
----
-
-## 📄 License
-
-This project is for academic purposes only. Dataset is synthetic and does not represent any real organization or individual.
