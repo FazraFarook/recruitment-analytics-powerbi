@@ -1,5 +1,4 @@
-# 📊 HR Recruitment Analytics Dashboard
-### Advanced Power BI Assignment | University of Colombo — BSc Applied Statistics
+# HR Recruitment Analytics Dashboard
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
